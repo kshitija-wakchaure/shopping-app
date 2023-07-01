@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'fourth-project'`, () => {
+  it(`should have as title 'angular-task-one'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fourth-project');
+    expect(app.title).toEqual('angular-task-one');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('fourth-project app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-task-one app is running!');
   });
 });
